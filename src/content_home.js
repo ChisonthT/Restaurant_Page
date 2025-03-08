@@ -3,16 +3,9 @@ import restaurant_img from "./restaurant_interior.jpg";
 
 export function loadContent() {
 
-    // Remove existing content
-    const content = document.getElementById("content");
-    content.remove();
+    // Get content container
+    const container = document.getElementById("content");
 
-    // Create new content
-    const container = document.createElement("div");
-    container.id = "content";
-    document.body.appendChild(container);
-
-    
     // Set background image for the body element
     document.body.style.backgroundImage = `url(${restaurant_img})`;
     document.body.style.display = "flex";
@@ -30,7 +23,7 @@ export function loadContent() {
     // Content wrapper to place everything on top
     const contentWrapper = document.createElement("div");
     contentWrapper.style.position = "relative";
-    contentWrapper.style.color = "white";
+    contentWrapper.style.color = "black";
     contentWrapper.style.textAlign = "center";
     container.appendChild(contentWrapper);
 
