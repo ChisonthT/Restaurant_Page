@@ -54,6 +54,7 @@ export function menuContent() {
     item.style.flexDirection = "row";
     item.style.alignItems = "center";
     item.style.justifyContent = "center";
+    
 
     foodName.textContent = menu[i].itemName;
     desc.textContent = menu[i].description;
